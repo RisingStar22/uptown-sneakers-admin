@@ -1,0 +1,54 @@
+<div class="products-header">
+  <h2>Products</h2>
+  <div>
+    <a class="btn btn-github mx-2" (click)="openPopup()">
+      <span class="las la-plus-circle"></span>
+      Add new category
+    </a>
+    <a class="btn btn-primary" routerLink="add">
+      <span class="las la-plus-circle"></span>
+      Add new product
+    </a>
+  </div>
+
+</div>
+
+
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+<div
+  class="modal "
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add new category</h4>
+      </div>
+      <div class="modal-body ">
+
+        <form class="form" [formGroup]="categoryForm">
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Category name"
+                     aria-label="Amount (to the nearest dollar)" formControlName="name">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" (click)="submitCategory()">
+          <span class="las la-plus-square"></span>
+          Add
+        </button>
+        <button type="button" class="btn btn-danger"
+                (click)="closePopup()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

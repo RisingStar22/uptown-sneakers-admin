@@ -1,0 +1,161 @@
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card-single{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+
+
+.card-single  div:last-child span{
+  color: var(--main-color);
+  font-size: 3rem;
+}
+.card-single span:first-child{
+  color: var(--tex-grey);
+}
+
+.card-single:last-child{
+  background-color: #060120;
+}
+
+.card-single:last-child  div:first-child h1{
+  color: #fff;
+}
+
+.card-single:last-child   div:last-child span{
+  color: #fff
+}
+
+.card-single:last-child   div:first-child span{
+  color: #fff
+}
+
+.recent-grid{
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 67% auto;
+}
+
+.card{
+  background: #fff;
+  border-radius: 5px;
+}
+
+.card-header,.card-body{
+  padding: 1rem;
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header button{
+  background: var(--main-color);
+  border-radius: 10px;
+  color: #fff;
+  font-size: .8rem;
+  padding: .5rem 1rem;
+  border: 1px solid var(--main-color);
+}
+table{
+  border-collapse: collapse;
+}
+
+thead tr{
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+thead td{
+  font-weight: 800;
+}
+
+td{
+  padding: .5rem 1rem;
+  font-size: .9rem;
+  color: #222;
+}
+
+td .status{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+
+tr td:last-child{
+  display: flex;
+  align-items: center;
+}
+
+.status.purple{
+  background: rebeccapurple;
+}
+
+.status.pink{
+  background: deeppink;
+}
+
+.status.green{
+  background: lightgreen;
+}
+
+.status.orange{
+  background: orangered;
+}
+
+.table-responsive{
+  width: 100%;
+  overflow-x: auto;
+}
+
+.customer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem .6rem;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+}
+
+.info img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: .5rem;
+}
+
+.info h4{
+  font-size: .8rem;
+  font-weight: 600;
+  color: #222;
+}
+.info small{
+  font-weight: 600;
+  color: var(--tex-grey);
+}
+
+.contact span{
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: .5rem;
+  color: var(--main-color);
+}
+
+

@@ -1,0 +1,68 @@
+<div class="align-content-center form-wrapper">
+  <form class="form g-3 needs-validation" [formGroup]="productForm">
+
+    <div class="col-12 ">
+      <label for="validationTooltip01" class="form-label">Product name</label>
+      <input
+        type="text"
+        formControlName="name"
+        class="form-control w-100"
+        id="validationTooltip01"
+        placeholder="Nike air max"
+        required
+      />
+
+    </div>
+    <div class="col-12">
+      <label for="validationTooltip02" class="form-label">Price</label>
+      <input
+        formControlName="price"
+        type="text"
+        class="form-control"
+        id="validationTooltip02"
+        placeholder="$567"
+        required
+      />
+    </div>
+    <div class="col-12">
+      <label for="validationTooltip01" class="form-label">Quantity</label>
+      <input
+        type="text"
+        formControlName="quantity"
+        class="form-control"
+        placeholder="Quantity"
+        required
+      />
+    </div>
+    <div class="col-12">
+      <label for="validationTooltip01" class="form-label">Short Description</label>
+      <input
+        type="text"
+        formControlName="shortDesc"
+        class="form-control"
+        placeholder="Short description"
+        required
+      />
+    </div>
+    <div class="col-12">
+      <label for="validationTooltip01" class="form-label">Long Description</label>
+      <input
+        type="text"
+        formControlName="longDesc"
+        class="form-control"
+        placeholder="Long description"
+        required
+      />
+    </div>
+    <div class="col-12">
+      <label for="validationTooltip02" class="form-label">Category</label>
+      <select name="" id="" class="form-control" formControlName="category">
+        <option value="{{category.id}}}" *ngFor="let category of categories">{{category.name}}</option>
+      </select>
+    </div>
+    <button class="w-100 mt-4 btn btn-success" (click)="addProduct()">Add product</button>
+  </form>
+
+  .
+
+</div>
